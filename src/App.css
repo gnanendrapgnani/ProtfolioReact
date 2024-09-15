@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root,
+.app,
+.contant {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #555;
+}
+
+#submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+textarea {
+  height: 150px;
+}
