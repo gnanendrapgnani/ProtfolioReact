@@ -13,6 +13,7 @@ const ContactMe = () => {
         maxWidth="600px"
         borderRadius="15px"
         backgroundColor={colors.grey[900]}
+        id="contactme"
       >
         <center>
           <h1 color="black">Contact Me</h1>

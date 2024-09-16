@@ -6,7 +6,7 @@ const AboutMe = () => {
     <>
       {aboutMeInfo.map((item) => {
         return (
-          <Box key={item.id}>
+          <Box key={item.id} id="aboutme">
             <h1 style={{ marginBottom: "10px" }}>{item.title}</h1>
             <p style={{ fontSize: "1.4em", marginBottom: "20px" }}>
               {item.information}

@@ -21,6 +21,7 @@ export const experienceInfo = [
     CompanyName: "DigiLearn",
     startedDate: "August-2023",
     endDate: "peresent",
+    role: "Front-End Web Developer",
     responsible:
       "Digilearn is an e-learning company that provides educational videos and activities designed to make understanding the syllabus and concepts easy and engaging. Developed and enhanced interactive activities using modern HTML5, CSS3, JavaScript, jQuery, and Bootstrap. Optimized activity for higher resolution devices to ensure compatibility and responsiveness. Improved performance and user experience through efficient coding practices and resource. Conducted thorough testing and debugging to ensure a smooth and error-free user experience.",
   },

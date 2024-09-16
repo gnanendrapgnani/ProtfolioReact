@@ -2,6 +2,7 @@ import { Box, IconButton } from "@mui/material";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import { useContext, useState } from "react";
+import { Link } from "react-scroll";
 import { ColorModeContext, tokens } from "../theme";
 import { useTheme } from "@emotion/react";
 
@@ -23,7 +24,9 @@ const Header = (toggleColorMode) => {
       backgroundColor={colors.grey[900]}
     >
       <Box mx="20px">
-        <img src="/Images/G.png" height="30px" width="30px" />
+        <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
+          <img src="/Images/G.png" height="30px" width="30px" />
+        </Link>
       </Box>
       <Box mx="20px">
         <IconButton onClick={colorMode.toggleColorMode}>

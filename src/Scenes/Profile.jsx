@@ -6,7 +6,8 @@ const Profile = () => {
     <>
       {profileInfo.map((item, index) => (
         <Box
-          key={index} // Include a unique key for each element in the list
+          id="home"
+          key={index}
           sx={{
             background:
               "linear-gradient(60deg, rgba(238, 175, 221, 1) 23%, rgba(34, 193, 195, 1) 100%)",
@@ -15,7 +16,7 @@ const Profile = () => {
             justifyContent: "start",
             p: "20px",
             borderRadius: "10px",
-            mb: "20px", // Add margin-bottom for spacing between boxes
+            mb: "20px",
           }}
         >
           <Box
@@ -23,7 +24,7 @@ const Profile = () => {
             width="80px"
             borderRadius="50%"
             border="1.5px solid yellow"
-            overflow="hidden" // To make the image fit in the circular box
+            overflow="hidden"
           >
             <img
               src={item.image}
@@ -33,7 +34,6 @@ const Profile = () => {
           </Box>
           <Box marginLeft="10px">
             <h1 style={{ color: "black" }}>{item.Name}</h1>
-
             <h3 style={{ color: "black" }}>{item.Role}</h3>
           </Box>
         </Box>
