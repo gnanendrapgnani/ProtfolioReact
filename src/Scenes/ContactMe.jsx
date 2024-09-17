@@ -27,6 +27,11 @@ const ContactMe = () => {
           onSubmit="reset()"
           method="POST"
           id="contact-form"
+          style={{
+            fontFamily: '"DotGothic16", sans-serif',
+            fontWeight: 400,
+            fontStyle: "normal",
+          }}
         >
           <input
             type="hidden"

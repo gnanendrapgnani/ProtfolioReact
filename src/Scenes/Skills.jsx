@@ -24,20 +24,20 @@ const Skills = () => {
             bgcolor={colors.grey[900]}
             p={2}
             borderRadius="10px"
-            min-width="131px"
-            max-width="200px"
-            min-height="312px"
-            maxHeight="312px"
+            minWidth="140px"
+            maxWidth="140px"
+            maxHeight="260px"
+            minHeight="260px"
           >
             <center>
               <h2 key={item.id}>{item.title}</h2>
               {item.skill.map((items) => (
                 <Box
                   bgcolor={colors.grey[900]}
-                  p={1}
+                  p="2px 5px"
                   m="10px 0"
                   borderRadius="5px"
-                  border="1px solid black"
+                  border={`1.5px solid ${colors.grey[400]}`}
                 >
                   {items}
                 </Box>

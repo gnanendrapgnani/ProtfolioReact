@@ -24,8 +24,13 @@ const Header = (toggleColorMode) => {
       backgroundColor={colors.grey[900]}
     >
       <Box mx="20px">
-        <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
-          <img src="/Images/G.png" height="30px" width="30px" />
+        <Link to="home" spy={true} smooth={true} offset={-100} duration={900}>
+          <img
+            src="/Images/G.png"
+            height="30px"
+            width="30px"
+            style={{ cursor: "pointer" }}
+          />
         </Link>
       </Box>
       <Box mx="20px">

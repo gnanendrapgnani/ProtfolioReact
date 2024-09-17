@@ -21,6 +21,8 @@ const SideBar = () => {
       position="fixed"
       maxWidth="260px"
       minWidth="260px"
+      minHeight="500px"
+      maxHeight="500px"
     >
       <Box
         backgroundColor={colors.grey[900]}
@@ -30,7 +32,7 @@ const SideBar = () => {
         paddingLeft="30px"
         paddingTop="20px"
       >
-        <Link to="home" spy={true} smooth={true} offset={-100} duration={500}>
+        <Link to="home" spy={true} smooth={true} offset={-100} duration={900}>
           <IconButton
             sx={{
               width: "100%",
@@ -51,7 +53,7 @@ const SideBar = () => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={500}
+          duration={900}
         >
           <IconButton
             sx={{
@@ -70,7 +72,7 @@ const SideBar = () => {
             <h5>About Me</h5>
           </IconButton>
         </Link>
-        <Link to="skills" spy={true} smooth={true} offset={-100} duration={500}>
+        <Link to="skills" spy={true} smooth={true} offset={-100} duration={900}>
           <IconButton
             sx={{
               width: "100%",
@@ -91,7 +93,7 @@ const SideBar = () => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={500}
+          duration={900}
         >
           <IconButton
             sx={{
@@ -115,7 +117,7 @@ const SideBar = () => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={500}
+          duration={900}
         >
           <IconButton
             sx={{

@@ -6,7 +6,7 @@ export const skills = [
   },
   {
     id: 2,
-    title: "FrameWork",
+    title: "Framework",
     skill: ["Bootstrap", "Tailwind", "Material UI"],
   },
 ];
