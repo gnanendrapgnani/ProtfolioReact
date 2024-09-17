@@ -4,6 +4,7 @@ import ContactMe from "../Scenes/ContactMe";
 import Profile from "../Scenes/Profile";
 import AboutMe from "../Scenes/AboutMe";
 import Experience from "../Scenes/Experience";
+import Skills from "../Scenes/Skills";
 // import Project from "../Scenes/Project";
 
 const RightContainer = () => {
@@ -12,6 +13,7 @@ const RightContainer = () => {
       <Profile />
       <AboutMe />
       <Experience />
+      <Skills />
       {/* <Project /> */}
       <ContactMe />
       <Footer />
