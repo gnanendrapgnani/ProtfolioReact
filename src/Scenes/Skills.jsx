@@ -7,7 +7,7 @@ const Skills = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
-    <Box margin="20px 0">
+    <Box margin="20px 0" id="skills">
       <h1>Skills</h1>
       <Box
         display="flex"

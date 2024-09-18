@@ -19,10 +19,11 @@ const SideBar = () => {
       height="100%"
       padding="20px"
       position="fixed"
-      maxWidth="260px"
-      minWidth="260px"
-      minHeight="500px"
-      maxHeight="500px"
+      maxWidth="240px"
+      minWidth="240px"
+      minHeight="440px"
+      maxHeight="440px"
+      sx={{ display: { xs: "none", sm: "block" } }}
     >
       <Box
         backgroundColor={colors.grey[900]}
@@ -38,7 +39,7 @@ const SideBar = () => {
               width: "100%",
               height: "auto",
               justifyContent: "start",
-              marginTop: "10px",
+              marginTop: "5px",
               "&:hover": {
                 backgroundColor: "transparent",
               },
@@ -60,7 +61,7 @@ const SideBar = () => {
               width: "100%",
               height: "auto",
               justifyContent: "start",
-              marginTop: "10px",
+              marginTop: "5px",
               "&:hover": {
                 backgroundColor: "transparent",
               },
@@ -78,7 +79,7 @@ const SideBar = () => {
               width: "100%",
               height: "auto",
               justifyContent: "start",
-              marginTop: "10px",
+              marginTop: "5px",
               "&:hover": {
                 backgroundColor: "transparent",
               },
@@ -100,7 +101,7 @@ const SideBar = () => {
               width: "100%",
               height: "auto",
               justifyContent: "start",
-              marginTop: "10px",
+              marginTop: "5px",
               "&:hover": {
                 backgroundColor: "transparent",
               },
@@ -124,7 +125,7 @@ const SideBar = () => {
               width: "100%",
               height: "auto",
               justifyContent: "start",
-              marginTop: "10px",
+              marginTop: "5px",
               "&:hover": {
                 backgroundColor: "transparent",
               },
@@ -145,7 +146,7 @@ const SideBar = () => {
             alignItems: "center",
             justifyContent: "start",
             gap: "10px",
-            marginTop: "10px",
+            marginTop: "5px",
             "&:hover": {
               backgroundColor: "transparent",
             },
@@ -162,7 +163,7 @@ const SideBar = () => {
             alignItems: "center",
             justifyContent: "start",
             gap: "10px",
-            marginTop: "10px",
+            marginTop: "5px",
             "&:hover": {
               backgroundColor: "transparent",
             },

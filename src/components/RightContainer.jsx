@@ -5,16 +5,16 @@ import Profile from "../Scenes/Profile";
 import AboutMe from "../Scenes/AboutMe";
 import Experience from "../Scenes/Experience";
 import Skills from "../Scenes/Skills";
-// import Project from "../Scenes/Project";
+import Project from "../Scenes/Project";
 
 const RightContainer = () => {
   return (
-    <Box p="20px 10px">
+    <Box sx={{ padding: { xs: "20px", sm: "20px 10px" } }}>
       <Profile />
       <AboutMe />
       <Experience />
       <Skills />
-      {/* <Project /> */}
+      <Project />
       <ContactMe />
       <Footer />
     </Box>
