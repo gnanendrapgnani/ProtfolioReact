@@ -1,12 +1,9 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import CardActionArea from "@mui/material/CardActionArea";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { project } from "../Data/project";
 import Carousel from "react-elastic-carousel";
+import { useTheme } from "@emotion/react";
+import { tokens } from "../theme";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -16,6 +13,9 @@ const breakPoints = [
 ];
 
 export default function Project() {
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+
   return (
     <>
       <Box>
@@ -29,37 +29,25 @@ export default function Project() {
         overflow="hidden"
         gap={2}
         p={2}
-        borderRadius="15px"
       >
         <Carousel breakPoints={breakPoints}>
-          {project.map((item) => (
-            <Card
-              key={item.id}
-              sx={{
-                minWidth: "250px",
-                maxWidth: "250px",
-                minHeight: "233px",
-                maxHeight: "233px",
-                borderRadius: "15px",
-              }}
+          {project.map((item, index) => (
+            // new card
+            <Box
+              key={index}
+              variant="outlined"
+              sx={{ width: 266, padding: "9px" }}
+              bgcolor={colors.grey[900]}
+              borderRadius="10px"
             >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={item.image}
-                  alt={item.title}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {item.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {item.description}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
+              <Box width="250px" height="160px">
+                <img src={item.image} width="100%" height="100%" />
+              </Box>
+              <Box>
+                <Typography level="title-md">{item.title}</Typography>
+                <Typography level="body-sm">{item.description}</Typography>
+              </Box>
+            </Box>
           ))}
         </Carousel>
       </Box>
