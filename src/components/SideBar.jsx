@@ -1,5 +1,5 @@
 import { useTheme } from "@emotion/react";
-import { Box, IconButton, MenuItem, Typography } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import { tokens } from "../theme";
 import { Link } from "react-scroll";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
@@ -8,6 +8,7 @@ import BuildRoundedIcon from "@mui/icons-material/BuildRounded";
 import FolderOpenRoundedIcon from "@mui/icons-material/FolderOpenRounded";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import PhoneIcon from "@mui/icons-material/Phone";
+import { motion } from "framer-motion";
 
 const SideBar = () => {
   const theme = useTheme();

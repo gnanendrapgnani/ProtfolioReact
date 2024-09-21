@@ -17,9 +17,9 @@ const Footer = () => {
       flexDirection="column"
       p="10px"
       borderRadius="15px"
-      sx={{ height: { xs: "90px", sm: "60px" } }}
+      sx={{ height: { xs: "100px", sm: "60px" } }}
     >
-      <h5 style={{ fontSize: "1em" }}>
+      <h5 style={{ fontSize: "1em", textAlign: "center" }}>
         Copyright © 2024 Designed by: Gnanendra P - All rights Reserved
       </h5>
       <Box
@@ -41,7 +41,7 @@ const Footer = () => {
             },
           }}
         >
-          <FaLinkedin marginRight="10px" fontSize="1.2em" />
+          <FaLinkedin marginRight="10px" fontSize="1em" />
           <h5>Linkdin</h5>
         </IconButton>
         <IconButton

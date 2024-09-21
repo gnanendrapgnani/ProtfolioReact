@@ -27,12 +27,12 @@ const Header = () => {
     <Box
       zIndex="2"
       position="fixed"
-      height="60px"
+      height="70px"
       width="100%"
       display="flex"
       alignItems="center"
       justifyContent="space-between"
-      p="10px 10px"
+      p="15px 10px"
       backgroundColor={colors.grey[900]}
       flexDirection="column"
     >

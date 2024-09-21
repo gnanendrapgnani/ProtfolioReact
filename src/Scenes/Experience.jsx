@@ -6,7 +6,7 @@ const Experience = () => {
     <>
       {experienceInfo.map((item) => {
         return (
-          <Box key={item.id}>
+          <Box>
             <h1>{item.title}</h1>
             <h1 style={{ marginTop: "10px" }}>{item.CompanyName}</h1>
             <h3>Role: {item.role}</h3>

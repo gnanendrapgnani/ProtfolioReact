@@ -1,6 +1,7 @@
 import { useTheme } from "@emotion/react";
 import { Box } from "@mui/material";
 import { tokens } from "../theme";
+import { motion } from "framer-motion";
 
 const ContactMe = () => {
   const theme = useTheme();

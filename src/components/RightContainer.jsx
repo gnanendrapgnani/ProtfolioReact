@@ -9,15 +9,17 @@ import Project from "../Scenes/Project";
 
 const RightContainer = () => {
   return (
-    <Box sx={{ padding: { xs: "20px", sm: "20px 10px" } }}>
-      <Profile />
-      <AboutMe />
-      <Experience />
-      <Skills />
-      <Project />
-      <ContactMe />
-      <Footer />
-    </Box>
+    <>
+      <Box sx={{ padding: { xs: "20px", sm: "20px 10px" } }}>
+        <Profile />
+        <AboutMe />
+        <Experience />
+        <Skills />
+        <Project />
+        <ContactMe />
+        <Footer />
+      </Box>
+    </>
   );
 };
 

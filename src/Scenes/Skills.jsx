@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import { skills } from "../Data/skills";
 import { useTheme } from "@emotion/react";
 import { tokens } from "../theme";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const theme = useTheme();

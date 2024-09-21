@@ -4,6 +4,10 @@ import { project } from "../Data/project";
 import Carousel from "react-elastic-carousel";
 import { useTheme } from "@emotion/react";
 import { tokens } from "../theme";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import CardActionArea from "@mui/material/CardActionArea";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -32,22 +36,45 @@ export default function Project() {
       >
         <Carousel breakPoints={breakPoints}>
           {project.map((item, index) => (
-            // new card
-            <Box
-              key={index}
-              variant="outlined"
-              sx={{ width: 266, padding: "9px" }}
-              bgcolor={colors.grey[900]}
-              borderRadius="10px"
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
             >
-              <Box width="250px" height="160px">
-                <img src={item.image} width="100%" height="100%" />
-              </Box>
-              <Box>
-                <Typography level="title-md">{item.title}</Typography>
-                <Typography level="body-sm">{item.description}</Typography>
-              </Box>
-            </Box>
+              <Card
+                key={index}
+                sx={{
+                  maxWidth: "210px",
+                  minWidth: "210px",
+                  minHeight: "280px",
+                  maxHeight: "280px",
+                  borderRadius: "10px",
+                }}
+              >
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="190"
+                    image={item.image}
+                    alt="green iguana"
+                    // href={item.link}
+                  />
+
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {item.title}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      {item.description}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </a>
           ))}
         </Carousel>
       </Box>
