@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { profileInfo } from "../Data/about";
+import profilImg from "/Images/profile1.jpeg";
 
 const Profile = () => {
   return (
@@ -27,7 +28,7 @@ const Profile = () => {
             overflow="hidden"
           >
             <img
-              src={item.image}
+              src={profilImg}
               alt="Profile"
               style={{ width: "100%", height: "100%" }}
             />
