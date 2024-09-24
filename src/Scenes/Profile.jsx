@@ -11,7 +11,7 @@ const Profile = () => {
           key={index}
           sx={{
             background:
-              "linear-gradient(60deg, rgba(238, 175, 221, 1) 23%, rgba(34, 193, 195, 1) 100%)",
+            "linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(0, 0%, 78%, 1) 100%)",
             display: "flex",
             alignItems: "center",
             justifyContent: "start",
